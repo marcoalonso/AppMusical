@@ -18,15 +18,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playNota(_ sender: UIButton) {
-        
-        //guard let tituloSonido = sender.currentTitle else { return }
-        print(sender.currentTitle ?? "A")
-        //reproducirSonido(nombreSonido: sender.currentTitle!)
-        //print(tituloSonido)
-        
-        
-        
+       
+        reproducirSonido(nombreSonido: sender.titleLabel!.text!)
     }
+    
     
     func reproducirSonido(nombreSonido: String ) {
         
